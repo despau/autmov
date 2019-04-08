@@ -1,0 +1,114 @@
+<form action="/carrier" method="POST">
+    <div class="container">
+        <div class="row">
+            <!-- origin -->
+            <div class="col border">
+                <fieldset>
+                    <legend>Origin Address</legend>
+                    <label for="origin">Origin: </label>
+                    <input type="text" id="origin" name="origin">
+                    <label for="o-raidus">Raidus: </label>
+                    <input type="text" id="o-raidius" name="o-raidus">
+                </fieldset>
+            </div>
+            <div class="col border">
+                    <fieldset>
+                        <legend>Destination Address</legend>
+                        <label for="destination">Destination: </label>
+                        <input type="text" id="destination" name="destination">
+                        <label for="d-raidus">Raidus: </label>
+                        <input type="text" id="d-raidus" name="d-raidus">
+                    </fieldset>
+            </div>
+        </div>
+        <!-- Equip -->
+        <div class="row">
+             <div class="col border">
+                    <fieldset>
+                            <legend>Equipment Type</legend>
+                            <label for="lr">Load Ramp (LR): </label>
+                            <input type="checkbox" id="lr" name="lr">
+                            <label for="lg">Lift Gate (LG): </label>
+                            <input type="checkbox" id="lg" name="lg">
+                            <label for="st">Straight Truck (ST): </label>
+                            <input type="checkbox" id="st" name="st">
+                            <label for="tt">Tractor Trailer (TT):</label>
+                            <input type="checkbox" id="tt" name="tt">
+                            <label for="st">Straight Truck (ST): </label>
+                            <input type="checkbox" id="st" name="st">
+                            <label for="tt">Tractor Trailer (TT):</label>
+                            <input type="checkbox" id="tt" name="tt">
+                     </fieldset>
+             </div>
+        </div>
+        <!-- gnle info -->
+        <div class="row border">
+            <div class="col">
+                <fieldset>
+                    <legend>General Info</legend>
+                    <!-- posting age -->
+                    <label for="postingAge">Posting Age</label>
+                    <select id="postingAge">
+                            <option value="halfHour">30 minutes</option>
+                            <option value="hour">1 hr</option>
+                            <option value="twoHour">2 hrs</option>
+                            <option value="threeHour">3 hours</option>
+                        </select>
+                        <br>
+                        <!-- No of drop ofs -->
+                    <label for="numDrops">Number of Drops</label>
+                    <select id="numDrops">
+                            <option value="any">Any</option>
+                            <option value="onedrop">1</option>
+                            <option value="twodrops">2</option>
+                        </select>
+                        <br>
+                        <label for="st">Paymet Rate: </label>
+                        <input type="checkbox" id="st" name="st"><br>
+                        <label for="tt">Team Required:</label>
+                        <input type="checkbox" id="tt" name="tt">
+                </fieldset>
+            </div>
+            <!-- company details -->
+            <div class="col">
+                <fieldset>
+                    <legend>Company Details</legend>
+                    <!-- company type-->
+                    <label for="companyType">Company Type</label>
+                    <select id="companyType">
+                            <option value="hour[half]">30 minutes</option>
+                            <option value="hour[one]">1 hr</option>
+                            <option value="hour[two]">2 hrs</option>
+                            <option value="hour[three]">3 hours</option>
+                        </select>
+                        <br>
+                        <!-- user rating-->
+                    <label for="userRating">User Rating: </label>
+                    <select id="userRating">
+                            <option value="rating[any]">Any</option>
+                            <option value="rating[good]">Good</option>
+                            <option value="rating[bad]">Bad</option>
+                        </select>
+                        <br>
+                        <!-- favorite -->
+                        <label for="favorite">Favorite : </label>
+                        <input type="checkbox" id="favorite" name="favorite"><br>
+                        <label for="Factorable">Factorable:</label>
+                        <input type="checkbox" id="Factorable" name="Factorable">
+                </fieldset>
+            </div>
+            <fieldset >
+                    <div class="col">
+                            <label for="tiaM">Tia Member: </label>
+                            <input type="checkbox" id="tiaM" name="tiaM"><br>
+                            <label for="tiaC">Tia Certificate:</label>
+                            <input type="checkbox" id="tiaC" name="tiaC">
+                    </div>
+            </fieldset>
+        </div>
+        <div class="container d-flex justify-content-center my-5">
+                <!-- <button class="btn btn-primary my-4 mx-30 btn-md">Search Loads</button> -->
+                <input type="submit" name="submit">
+        </div>
+    </div>
+</form>    

@@ -1,0 +1,14 @@
+<% include ../partials/header/header %>
+
+    <div class="container-fluid">
+        
+        <h1>Login</h1>
+        <form class="login-form" action="/login" method="post">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="Login">
+        </form>
+        <a href="/register" class="btn btn-primary my-3 p-2">Register</a>
+    </div>
+
+<% include ../partials/footer/footer %>

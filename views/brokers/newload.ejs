@@ -1,0 +1,48 @@
+<% include ../partials/header/member-header %>
+
+    <div>
+        <!-- breadcrumb -->
+            <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+    </div>
+    <div class="container-fluid row">
+        <!-- aside -->
+        <aside class="col-md-2">
+            <% include ../partials/broker/brokerSidebar %>
+        </aside>
+        <!-- for the main content -->
+        <div class="col-md-10 border">
+            <!-- top part -->
+                <div class="row d-block">
+                    <h2>My Loads</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias neque asperiores, eum dolorum odit deleniti!</p>
+                </div>
+                <!-- main part -->
+                <div class="row d-flex flex-row justify-content-between my-4">
+                    <div>
+                            <a href="" class="btn btn-md btn-secondary inline-block mr-2">Single Load Post</a>
+                            <a href="" class="btn btn-md btn-secondary inline-block ml-2">Multiple Load Post</a>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-link">Export to Excel</a>
+                    </div>
+                </div>
+
+                <!-- for the main search area -->
+                <!-- my posted loads go there -->
+            <div class=" ">
+                <% include ../partials/broker/mypostedloads %>
+            </div>
+        </div>
+            
+           
+        </div>
+    </div>
+
+
+
+<% include ../partials/footer/footer %>

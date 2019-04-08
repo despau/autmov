@@ -1,0 +1,37 @@
+{
+  "name": "autmov-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watch-sass": "node-sass sass/main.scss public/stylesheet/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch-sass",
+    "compile-sass": "node-sass sass/main.scss public/stylesheet/style.comp.css",
+    "concat-css": "concat -o public/stylesheet/style.concat.css public/stylesheet/icon-font.css public/stylesheet/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b \"last 10 versions\" public/stylesheet/style.concat.css -o public/stylesheet/style.prefix.css",
+    "compress-css": "node-sass public/stylesheet/style.prefix.css public/stylesheet/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass concat-css prefix-css compress-css"
+  },
+  "author": "romanegustin24",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "faker": "^4.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.20",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
+  }
+}
